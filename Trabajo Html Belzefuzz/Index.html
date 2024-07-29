@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<!-- Sección del head: incluye metadatos y enlaces a archivos externos -->
+	<meta charset="UTF-8"> <!-- Codificación del documento -->
+	<link rel="icon" type="image/png" href="Imagenes/Favicom/favicon.png" /> <!-- Icono de la pestaña del navegador -->
+	<title>BELZEFUZZ </title> <!-- Título de la página -->
+	<link rel="stylesheet" href="Estilos CSS/Index.css"> <!-- Enlace al archivo CSS -->
+</head>
+
+<body>
+	<!-- Sección del header: incluye la barra de navegación -->
+	<header>
+
+		<nav>
+			<ul>
+				<li><a href="Index.html">Inicio</a></li><!-- Enlace a la página de inicio -->
+				<li><a href="Discografia.html">Discografía</a></li><!-- Enlace a la página de discografía -->
+				<li><a href="Tour.html">Gira</a></li><!-- Enlace a la página de tour -->
+				<li><a href="Merchandising.html">Merchandising</a></li><!-- Enlace a la página de merchandising -->
+				<li><a href="FormularioBS.html">Fan Club</a></li><!-- Enlace a la página de Fan Club -->
+			</ul>
+		</nav>
+	</header>
+	<!-- Sección del main: incluye el contenido principal de la página -->
+	<main>
+		<!-- Div contenedor-flex: contendrá una imagen de cabecera -->
+		<div class="contenedor-flex"><!--Contendor Flex para las cajas oernite alinear elementos de manera flexible-->
+			<section>
+				<img src="Imagenes\Cabecera\logo_b.png" alt="imagenCabecera"> <!-- Imagen de cabecera -->
+				<p>The sound of the anvil of Doom</p> <!-- Párrafo descriptivo -->
+			</section>
+		</div>
+	</main>
+
+	<!-- La clase "contenedor-grid" contiene informacion sobre la banda -->
+	<div class="contenedor-grid"><!--Contenedor Grid que utiliza un sistema CSS Grid para organizar la cuadricula en Filas y Columnas-->
+		<div>
+			<span style="color:rgb(252, 94, 94);"><h3>¿Quiénes son BELZEFUZZ?</h3></span><!--se utiliza para aplicar estilo a una parte específica de texto dandole un color -->
+			<p>BELZEFUZZ es una banda de doom metal procedente de los bosques más fríos de Siberia.
+				Allí se congelaron sus corazones y surgió su fría pasión por los sonidos pesados y
+				oscuros que reflejan en sus temas. BELZEFUZZ no se personaliza en sus miembros,
+				sino en la idea de ser una sola identidad que transmite un mensaje destacando la decadencia humana..
+			</p>
+		</div>
+		<div>
+			<span style="color:rgb(252, 94, 94);"><h3>¿A quién dirigimos nuestra música?</h3></h3></span><!--se utiliza para aplicar estilo a una parte específica de texto dandole un color -->
+				<p>A todo aquel que quiera adentrarse en la verdad de la oscura psique humana,
+				nuestro mensaje se basa en la filosofía de la misantropía,
+				haciendo hincapié en lo destructivo de la sociedad humana
+				con respecto al entorno en el que se desarrolla.
+			</p>
+		</div>
+		<div>
+			<span style="color:rgb(252, 94, 94);"><h3>Únete a nosotros</h3></span><!--se utiliza para aplicar estilo a una parte específica de texto dandole un color -->
+				<p>Únete a nosotros, sé uno más de los adoradores de BELZEFUZZ.
+				Déjate llevar por nuestros sonidos, relájate y escucha nuestro
+				mensaje sobre el mundo en el que vivimos y su entorno. Libérate de las ataduras
+				impuestas por la masa, únete al culto. ¡Bless BELZEFUZZ!
+			</p>
+		</div>
+	</div>
+	<!-- La etiqueta <form> define un formulario de entrada de datos -->
+	<form action="#" method="POST">
+		<!-- Aquí puedes agregar campos de entrada de datos para el formulario -->
+
+		<label for="name">Nombre:</label>
+		<input type="text" id="name" name="name" required>
+		<!-- Campo de texto para ingresar el nombre, con validación requerida -->
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		<!-- Campo de texto para ingresar el email, con validación requerida -->
+
+		<label for="phone">Teléfono:</label>
+		<input type="tel" id="phone" name="phone" required>
+		<!-- Campo de texto para ingresar el teléfono, con validación requerida -->
+
+		<label for="message">Mensaje:</label>
+		<textarea id="message" name="message" required></textarea>
+		<!-- Área de texto para ingresar el mensaje, con validación requerida -->
+
+		<label for="genre">Género musical favorito:</label>
+		<select id="genre" name="genre"> <!-- Menú desplegable para seleccionar el género musical favorito -->
+			<option value="doom-metal">Doom Metal</option>
+			<option value="heavy-metal">Heavy Metal</option>
+			<option value="black-metal">Black Metal</option>
+			<option value="death-metal">Death Metal</option>
+			<option value="thrash-metal">Thrash Metal</option>
+		</select>
+
+		<fieldset>
+			<legend>¿Te gustaría recibir información sobre nuestros conciertos y novedades?</legend>
+			<!-- Leyenda para el grupo de opciones de radio -->
+			<input type="radio" id="yes" name="newsletter" value="yes">
+			<label for="yes">Sí</label> <!-- Opción de radio para seleccionar "Sí" -->
+
+			<input type="radio" id="no" name="newsletter" value="no">
+			<label for="no">No</label> <!-- Opción de radio para seleccionar "No" -->
+		</fieldset>
+
+		<input type="submit" value="Enviar"> <!-- Botón de envío del formulario -->
+
+	</form>
+
+	</main>
+	<footer>
+		<!-- Sección del footer: incluye información adicional sobre la página -->
+		<p>Todos los derechos reservados &copy; 2023. BELZEFUZZ.</p>
+	</footer>
+
+</body>
+
+</html>

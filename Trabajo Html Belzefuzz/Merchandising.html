@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Sección del head: incluye metadatos y enlaces a archivos externos -->
+    <meta charset="UTF-8"> <!-- Codificación del documento -->
+    <link rel="icon" type="image/png" href="Imagenes\Favicom\favicon.png" /> <!-- Icono de la pestaña del navegador -->
+    <title>BELZEFUZZ - Merchandasing</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="Estilos CSS\Merchandising.css"> <!-- Enlace al archivo CSS -->
+</head>
+
+<body>
+    <!-- Sección del header: incluye la barra de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li><!-- Enlace a la página de inicio -->
+                <li><a href="Discografia.html">Discografía</a></li><!-- Enlace a la página de discografía -->
+                <li><a href="Tour.html">Gira</a></li><!-- Enlace a la página de tour -->
+                <li><a href="Merchandising.html">Merchandising</a></li><!-- Enlace a la página de merchandising -->
+                <li><a href="FormularioBS.html">Fan Club</a></li><!-- Enlace a la página de Fan Club -->
+            </ul>
+        </nav>
+    </header>
+  
+    <!-- Sección del main: incluye el contenido principal de la página -->
+    <main>
+        <!-- Div contenedor-flex: contendrá una imagen de cabecera -->
+        <div class="contenedor-flex">
+            <section>
+                <img src="Imagenes\Cabecera\logo_b.png" alt="imagenCabecera"> <!-- Imagen de cabecera -->
+                <p>The sound of the anvil of Doom</p> <!-- Párrafo descriptivo -->
+            </section>
+        </div>
+    </main>
+
+    <!-- Div contenedor-grid: contiene Las procductos  Merchandising de la banda-->
+
+    <div class="contenedor-grid">
+        <div>
+            <h3>Camiseta</h3>
+            <img class="producto-img" src="Imagenes\Merch\Camiseta1BelZeDEL.png" alt="camiseta1">
+            <img class="producto-img" src="Imagenes\Merch\Camiseta1BelZeTRA.png" alt="camieta1">
+            <p>20€</p>
+            <button onclick="agregarAlCarrito()">Comprar</button>
+        </div>
+        <div>
+            <h3>Camiseta</h3>
+            <img class="producto-img" src="Imagenes\Merch\Camiseta2BelZeDEL.png" alt="Camiseta2">
+            <img class="producto-img" src="Imagenes\Merch\Camiseta2BelzeTRA.png" alt="Camiseta2">
+            <p>20€</p>
+            <button onclick="agregarAlCarrito()">Comprar</button>
+        </div>
+        <div>
+            <h3>Gorra</h3>
+            <img class="producto-img" src="Imagenes\Merch\GorraBelZeB.png" alt="Gorra1">
+            <img class="producto-img" src="Imagenes\Merch\GorraBelZeP.png" alt="Gorra2">
+            <p>15€</p>
+            <button onclick="agregarAlCarrito()">Comprar</button>
+        </div>
+        <div>
+            <h3>Chapa</h3>
+            <img class="producto-img" src="Imagenes\Merch\ChapaBelZeB.png" alt="Chapa1">
+            <img class="producto-img" src="Imagenes\Merch\ChapaBelZeW.png" alt="Chapa2">
+            <p>5€</p>
+            <button onclick="agregarAlCarrito()">Comprar</button>
+        </div>
+        <div>
+            <h3>Bolsas</h3>
+            <img class="producto-img" src="Imagenes\Merch\BolsaBelzeW.png" alt="Tote">
+            <img class="producto-img" src="Imagenes\Merch\ToteBelZeB.png" alt="Bolsa">
+            <p>10€</p>
+            <button onclick="agregarAlCarrito()">Comprar</button>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <!-- Sección del footer: incluye información adicional sobre la página -->
+        <p>Todos los derechos reservados &copy; 2023. BELZEFUZZ.</p>
+    </footer>
+</body>
+
+</html>

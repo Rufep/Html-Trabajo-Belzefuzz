@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Sección del head: incluye metadatos y enlaces a archivos externos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Codificación del documento Bootstrap -->
+    <meta charset="UTF-8"> <!-- Codificación del documento -->
+    <link rel="icon" type="image/png" href="Imagenes\Favicom\favicon.png" /> <!-- Icono de la pestaña del navegador -->
+    <title>BELZEFUZZ - Fam Club</title> <!-- Título de la página -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Enlace Css Bootstrap -->
+    <link rel="stylesheet" href="Estilos CSS\FormularioBS.css"> <!-- Enlace al archivo CSS -->
+</head>
+
+<body>
+    <!-- Sección del header: incluye la barra de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li><!-- Enlace a la página de inicio -->
+                <li><a href="Discografia.html">Discografía</a></li><!-- Enlace a la página de discografía -->
+                <li><a href="Tour.html">Gira</a></li><!-- Enlace a la página de tour -->
+                <li><a href="Merchandising.html">Merchandising</a></li><!-- Enlace a la página de merchandising -->
+                <li><a href="FormularioBS.html">Fan Club</a></li><!-- Enlace a la página de Fan Club -->
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección del main: incluye el contenido principal de la página -->
+    <main>
+        <!-- Div contenedor-flex: contendrá una imagen de cabecera -->
+        <div class="contenedor-flex">
+            <section>
+                <img src="Imagenes\Cabecera\logo_b.png" alt="imagenCabecera"> <!-- Imagen de cabecera -->
+                <p>The sound of the anvil of Doom</p> <!-- Párrafo descriptivo -->
+            </section>
+        </div>
+    </main>
+
+    <div class="container">
+
+        <form class="row g-3 mt-3">
+            <!--"row" se aplica al formulario para utilizar el sistema de cuadrícula de Bootstrap y distribuir los elementos del formulario en filas.-->
+            <!--"g-3" se aplica al formulario para agregar un espaciado horizontal entre las columnas del formulario. El número 3 indica el tamaño del espaciado en unidades de espacio de Bootstrap.
+             La clase "mt-3" se aplica al formulario para agregar un margen superior de tamaño 3 en unidades de espacio de Bootstrap, lo que crea un espacio vertical entre el formulario y los elementos anteriores en la página.-->
+           
+            <span style="color:rgb(252, 94, 94); text-align: center;"><!--se utiliza para aplicar estilo a una parte específica de texto dandole un color y alineando el texto en el centro-->
+                <h3>Únete al Fan Club de BELZEFUZZ</h3>
+            </span>
+
+
+            <div class="col-6"><!-- Col-6  ocupará la mitad del ancho disponible dentro del diseño de columnas en Bootstrap -->
+                <label for="emailinput" class="form-label">Email</label>
+                <input type="email" class="form-control" id="emailinput" placeholder="Escribe tu Email">
+            </div>
+
+            <div class="col-6">
+                <label for="passinput" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="passinput" placeholder="Escribe tu contraseña">
+            </div>
+
+            <div class="col-6">
+                <label for="nombreinput" class="form-label">Nombre</label>
+                <input type="Nombre" class="form-control" id="nombreinput" placeholder="Escribe tu nombre">
+            </div>
+
+            <div class="col-6">
+                <label for="apellidoinput" class="form-label">Apellidos</label>
+                <input type="Apellidos" class="form-control" id="apellidoinput" placeholder="Escribe tus apellidos">
+            </div>
+
+            <div class="col-6">
+                <label for="Dirimput" class="form-label">Dirección</label>
+                <input type="Direccion" class="form-control" id="Dirimput" placeholder="Escribe tu Dirección">
+            </div>
+
+            <div class="col-6">
+                <label for="Telimput" class="form-label">Telefono</label>
+                <input type="Telefono" class="form-control" id="Telimput" placeholder="Escribe tu Telefono">
+            </div>
+
+            <div>
+                <label> Como nos has conocido</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Elige Una Opción</option>
+                    <option value="1">Por Spotify u otras aplicaciones de Música</option>
+                    <option value="2">Por un Amigo</option>
+                    <option value="3">Por La Prensa, Televisión , Radio</option>
+                    <option value="4">Otras Razones</option>
+                </select>
+            </div>
+
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">Aceptas los Terminos y Condiciones</label>
+            </div>
+
+            <div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+
+
+        </form>
+    </div>
+    </main>
+
+    <!-- Sección del footer: incluye información adicional sobre la página -->
+    <footer>
+        <p>Todos los derechos reservados &copy; 2023. BELZEFUZZ.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script> <!-- Scrip de Bootstrap -->
+
+
+</body>
+
+</html>
